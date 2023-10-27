@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 
 
 public class HelloController {
@@ -17,33 +18,26 @@ public class HelloController {
     private RadioButton pigRB;
     @FXML
     private RadioButton cowRB;
-
-    public void start() {
-        RadioButton cat = catRB;
-        RadioButton horse = horseRB;
-        RadioButton pig = pigRB;
-        RadioButton cow = cowRB;
-
-        if (cat = true)
-        {
+    @FXML
+    void say() {
+        ToggleGroup xxx = new ToggleGroup();
+        RadioButton selection = (RadioButton) xxx.getSelectedToggle();
+        if (selection == catRB) {
             Cat cat = new Cat();
             rezL.setText(cat.voice);
         }
-        else if  horse.setVisible(true);
-        {
+        if (selection == horseRB) {
             Horse horse = new Horse();
             rezL.setText(horse.voice);
         }
-        else if  pigRB.setVisible(true);
-        {
+        if (selection == pigRB) {
             Pig pig = new Pig();
             rezL.setText(pig.voice);
         }
-        else if  cowRB.setVisible(true);
-        {
+        if (selection == cowRB) {
             Cow cow = new Cow();
             rezL.setText(cow.voice);
         }
-    }
 
+    }
 }

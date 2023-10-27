@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aba.lab19_2.HelloController">
    <children>
-      <Button layoutX="79.0" layoutY="106.0" mnemonicParsing="false" onAction="#start" style="-fx-background-color: #0000FF;" text="Говори" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="79.0" layoutY="106.0" mnemonicParsing="false" onAction="#say" style="-fx-background-color: #0000FF;" text="Говори" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
